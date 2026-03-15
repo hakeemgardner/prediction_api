@@ -1,5 +1,6 @@
 fastapi
 uvicorn
 pandas
-BaseModel
 joblib
+scikit-learn
+python-multipart
