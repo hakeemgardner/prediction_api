@@ -4,5 +4,4 @@ pandas
 joblib
 scikit-learn
 xgboost
-python-multipartpydantic
 pydantic
