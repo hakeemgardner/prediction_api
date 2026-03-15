@@ -3,4 +3,6 @@ uvicorn
 pandas
 joblib
 scikit-learn
-python-multipart
+xgboost
+python-multipartpydantic
+pydantic

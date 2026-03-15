@@ -20,10 +20,9 @@ app.add_middleware(
 
 # 2. Load the model into memory exactly once when the API starts
 try:
-    # Make sure this matches the exact name of your newly saved 8-feature model!
     model = joblib.load('crime_predictor_model.joblib')
 except Exception as e:
-    print(f"Error loading model: {e}")
+    raise RuntimeError(f"Error loading model: {e}")
 
 # 3. Define the strict rules for incoming data (The Bouncer)
 class CrimeFeatures(BaseModel):
